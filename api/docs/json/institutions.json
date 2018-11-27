@@ -1,0 +1,49 @@
+{
+    "basePath": "http://api.abs.co.ke/docs/json",
+    "swaggerVersion": "1.2",
+    "apiVersion": "0.2",
+    "resourcePath": "/institutions",
+    "apis": [
+        {
+            "path": "institutions",
+            "description": "get",
+            "operations": [
+                {
+                    "method": "GET",
+                    "summary": "get institutions",
+                    "nickname": "list institutions",
+                    "parameters": [
+                        {
+                            "paramType": "query",
+                            "name": "id",
+                            "type": "string",
+                            "required": false,
+                            "description": "institutions id"
+                        },
+                        {
+                            "paramType": "query",
+                            "name": "instcode",
+                            "type": "string",
+                            "required": false,
+                            "description": "institutions code"
+                        }
+                    ],
+                    "responseMessages": [
+                        {
+                            "code": 400,
+                            "message": "Invalid username"
+                        },
+                        {
+                            "code": 404,
+                            "message": "Not found"
+                        }
+                    ],
+                    "notes": "Returns a string"
+                }
+            ]
+        }
+    ],
+    "produces": [
+        "application/json"
+    ]
+}

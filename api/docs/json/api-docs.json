@@ -1,0 +1,14 @@
+{
+    "apiVersion": "0.2",
+    "swaggerVersion": "1.2",
+    "apis": [
+        {
+            "path": "/institutions.{format}",
+            "description": "get"
+        },
+        {
+            "path": "/researchers.{format}",
+            "description": "get"
+        }
+    ]
+}

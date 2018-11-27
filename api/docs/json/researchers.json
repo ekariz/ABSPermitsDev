@@ -1,0 +1,42 @@
+{
+    "basePath": "http://api.abs.co.ke/docs/json",
+    "swaggerVersion": "1.2",
+    "apiVersion": "0.2",
+    "resourcePath": "/researchers",
+    "apis": [
+        {
+            "path": "researchers",
+            "description": "get",
+            "operations": [
+                {
+                    "method": "GET",
+                    "summary": "get researchers",
+                    "nickname": "list researchers",
+                    "parameters": [
+                        {
+                            "paramType": "query",
+                            "name": "id",
+                            "type": "string",
+                            "required": false,
+                            "description": "researcher ORCID iD"
+                        }
+                    ],
+                    "responseMessages": [
+                        {
+                            "code": 400,
+                            "message": "Invalid ID"
+                        },
+                        {
+                            "code": 404,
+                            "message": "Not found"
+                        }
+                    ],
+                    "notes": "Returns a string"
+                }
+            ]
+        }
+    ],
+    "produces": [
+        "application/json"
+    ]
+}
